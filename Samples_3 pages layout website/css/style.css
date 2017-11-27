@@ -1,0 +1,213 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "open serif";
+}
+
+
+
+/* header */
+.container {
+	background-color:#008B8B;
+	min-height: 105px;
+}
+
+header{
+	overflow: hidden;
+	display: inline;
+}
+header h1#title{
+	color: #ffffff;
+	float: left;
+	font-size: 50px;
+	padding: 25px 20px;
+}
+
+span {
+	color: #4B0082;
+}
+
+/* Navbar */
+
+.navbar ul {
+	position: relative;
+	list-style: none;
+	left: 60%;
+}
+
+.navbar li {
+	float: left;
+	margin-top:25px; 
+}
+
+.navbar a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 14px 16px;
+}
+
+
+.navbar li {
+	color: red;
+}
+.navbar a:hover{
+	color: #4B0082;
+}
+
+/*Section Showcase */
+#showcase {
+	background-image: url("../img/showcase.jpeg");
+	width: 100%
+	background-repeat:no-repeat;
+	min-height: 500px;
+	opacity: 0.9;
+}
+
+.wrapper {
+	padding-bottom: 10px;
+	padding-top: 250px;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+#showcase h1 {
+	padding-left: 250px;
+	color: #ffffff;
+	font-size: 60px;
+}
+
+#showcase p{
+	color: #ffffff;
+	font-size: 25px;
+}
+/* main */
+#box{
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+.boxes{
+	float: left;
+	width:33.3%;
+	height: 400px;
+	text-align: center;
+}
+
+
+.boxes h4{
+	font-size: 25px;
+}
+.boxes p{
+	font-size: 15px;
+}
+
+.box-content{
+	padding-top:50px; 
+}
+
+
+/* Footer */
+
+footer {
+	clear: both;
+	background-color:#008B8B;
+	min-height: 60px;
+	text-align: center;
+}
+
+footer h3 {
+	color: #ffffff;
+	padding-top:15px; 
+}
+
+
+
+
+/* about Us pages */
+
+
+.row{
+	margin-top:50px; 
+	width: 100%;
+}
+/* cols -Main */
+.cols-main{
+	margin-left:30px; 
+	height:450px;
+	float: left;
+	width: 50%
+}
+
+
+.cols-main h2{
+	font-size: 40px;
+	color: #4B0082;
+}
+
+.cols-main p {
+	font-size: 20px;
+	color: #520AF3;
+}
+
+/* cols -aside */
+.cols-aside{
+	float: right;
+	width: 25%;
+	padding-left:50px; 
+	height:300px;
+	background-color: #5F9EA0;
+
+}
+
+
+.cols-aside h3 {
+	font-size: 35px;
+	color: #ffffff;
+}
+.cols-aside ul {
+	list-style: circle;
+}
+.cols-aside li {
+	font-size: 30px;
+	color: #00FF00;
+}
+
+.cols-aside span {
+	font-size: 25px;
+	color: #FFD700;
+}
+
+.cols-aside li:hover ,span:hover {
+	font-size: 32px;
+	color: 	#4B0082;
+}
+
+
+
+/* Contact US */
+
+
+form {
+	margin: 20px;
+	text-align: center;
+	display: table;
+}
+
+input{
+	padding: 2px 2px;
+}
+
+label{
+	font-size: 30px;
+	padding: 14px 16px;
+	color: #6A5ACD;
+}
+input[type="submit"]{
+	margin-top:20px; 
+	margin-left: 100px;
+	background-color: #00FFFF;
+	font-size: 25px;
+	text-align: center;
+	padding: 2px 5px;
+}

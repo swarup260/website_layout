@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+.navbar ul {
+	width: 100%;
+	position: fixed;
+	list-style: none;
+	background-color: #808080;
+
+}
+
+.navbar li{
+	display: inline;
+	left:500px;
+}
+
+.navbar a{
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #2F4F4F;
+}
+
+.navbar a:hover{
+	background-color:#000080;
+	color: #ffffff;
+}
+
+
+/* Parallax */
+
+[class*="para-"]{
+	min-height: 500px;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.para-1{
+	background-image: url('img1.jpeg');
+}
+.para-2{
+	background-image: url('img2.jpeg');
+}
+.para-3{
+	background-image: url('img3.jpeg');
+}
+main p{
+	font-size: 30px;
+	color: #F4A460;
+}
+
+footer{
+	color: #ffffff;
+	font-size: 50px;
+	background-color: #a9a9a9;
+	min-height: 100px;
+	text-align: center;
+}
+
+footer span{
+	color:#000000;
+}
