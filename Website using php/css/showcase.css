@@ -1,0 +1,45 @@
+#showcase {
+	background-image: url("../img/showcase.jpeg");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center; 
+}
+
+#showcase h1{
+	color: #431C53;
+	font-size: 60px;
+	float: left;
+	text-transform: uppercase;
+	text-align: center;
+
+
+}
+
+#showcase span {
+	color: #551B8C;
+}
+
+#showcase p {
+	text-align: center;
+	color: #551B8C;
+	font-size: 20px;
+	padding: 10px 14px;
+}
+
+button.btn{
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	background: none;
+	border: #431C53 1px solid;
+	padding: 10px 14px;
+}
+
+button.btn:hover{
+	background-color: #551B8C;
+	color:#ffffff;
+}
