@@ -1,0 +1,223 @@
+$showcastext : 	#551B8C;
+$section : 	#FAEBD7;
+$h3color :#FFE135;
+$icolor: 	#21ABCD;
+$mainheight :650px;
+@import'header';
+@import'mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    @include box-sizing();
+}
+
+section#showcase {
+    background-image: url("../img/showcase.jpeg");
+    background-position: center;
+    background-attachment:fixed;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 50px;
+        color: $showcastext;
+        
+    }
+    p{
+        padding: 10px 16px;
+        color: lighten($color:$showcastext, $amount: 40%);
+        font-size: 25px;
+        
+    }
+}
+
+section.col-3 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background-color:$section;
+
+    div{
+        width:33.33%;
+        margin: 5px;
+        text-align: center;
+        i{
+            font-size: 50px;
+            padding: 14px 16px;
+            color: $icolor;
+        }
+        h3{
+            font-size: 20px;
+            color: darken($color: $h3color, $amount: 30%);
+        }
+        p{
+            color: darken($color: $h3color, $amount: 15%);
+        }
+    }
+}
+
+section{
+    @extend section.col-3;
+    display: table;
+    background-color: darken($color: $section, $amount: 10%);
+    h1{
+        margin: 8px 10px;
+        padding: 5px 10px;
+        text-align: center;
+        font-size:30px;
+    }
+    p{
+        margin: 5px 10px;
+        font-size: 20px;
+    }
+    img[alt= "comming soon ...."]{
+        margin: 20px 25px; 
+        width: 300px;
+        height: 200px;
+        float: left;
+    }
+    &:nth-child(even){
+     background-color:darken($color: $section, $amount: 20%);
+ }
+    
+}   
+ 
+
+footer{
+    clear: both;
+    background-color: $bgmain;
+    text-align: center;
+    font-size: 35px;
+    color:lighten($color: $ahover, $amount: 30%);
+    span{
+        color:lighten($color: $ahover, $amount: 40%);
+    }
+
+    ul {
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+        padding: 14px 16px;
+    }
+    a{
+        color:lighten($color: $ahover, $amount: 40%);
+        text-decoration: none;
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+    a:hover{
+        color: #fff;
+    }
+    
+}
+
+
+main{
+    width: 100%;
+    aside{
+        background-color:$section;
+        width: 25%;
+        float: right;
+        height: $mainheight;
+        overflow: hidden;
+        h2{
+            margin-top: 10px;
+            text-align: center;
+        }
+        ul{
+            list-style:none;
+            margin: 10px 16px;
+            padding: 10px 15px;
+        }
+        a{
+            text-align: center;
+            padding: 10px 15px;
+            line-height: 2em;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        a:hover{
+                color: #21ABCD;
+            }
+    }
+    section.col{
+        width:75%;
+        float: left; 
+        height: $mainheight;
+    }
+}
+
+section#imageSlider{
+    margin: 0;
+    padding: 0;
+
+    div.slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+        background-position: center;
+        background-attachment: fixed;
+        p{
+            font-size:20px;
+            color:darken($color: $icolor, $amount: 25%);
+        }
+    }
+     .slide1{
+            background-image: url('../img/1.jpeg');
+        }
+}
+
+
+
+
+section {
+
+    ul{
+        text-align: center;
+    }
+    li{
+        font-size: 20px;
+        color: darken($color: $icolor, $amount: 10%);
+        &:hover{
+            color: $icolor;
+        }
+    }
+    form{
+        margin-left:25%;
+        margin-right: 25%;
+        padding: 14px 16px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    input,textarea,button {
+        color: darken($color: $icolor, $amount: 40%);
+        padding: 14px 16px;
+        margin-bottom: 5px;
+        &:focus{
+            border: 2px $icolor solid;
+        }
+    }
+    
+    button{
+        background-color: $icolor;
+        text-align: center;
+        font-size: 15px;
+        color: #fff;
+    }
+    label{
+        background: none;
+        text-align: left;
+        font-size: 15px;
+        color: $icolor;
+    }
+}

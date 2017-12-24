@@ -1,0 +1,263 @@
+header {
+  background-color: #AB274F;
+  overflow: hidden;
+  height: 50px;
+}
+
+header ul {
+  list-style: none;
+}
+
+header li {
+  float: left;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+header a {
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  margin: 5px 8px;
+  color: #E32636;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+header :hover {
+  text-decoration: underline;
+  color: #ff698c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+section#showcase {
+  background-image: url("../img/showcase.jpeg");
+  background-position: center;
+  background-attachment: fixed;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#showcase h1 {
+  font-size: 50px;
+  color: #551B8C;
+}
+
+section#showcase p {
+  padding: 10px 16px;
+  color: #bb8ae9;
+  font-size: 25px;
+}
+
+section.col-3, section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  background-color: #FAEBD7;
+}
+
+section.col-3 div, section div {
+  width: 33.33%;
+  margin: 5px;
+  text-align: center;
+}
+
+section.col-3 div i, section div i {
+  font-size: 50px;
+  padding: 14px 16px;
+  color: #21ABCD;
+}
+
+section.col-3 div h3, section div h3 {
+  font-size: 20px;
+  color: #9b8400;
+}
+
+section.col-3 div p, section div p {
+  color: #e8c500;
+}
+
+section {
+  display: table;
+  background-color: #f4d4aa;
+}
+
+section h1 {
+  margin: 8px 10px;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+section p {
+  margin: 5px 10px;
+  font-size: 20px;
+}
+
+section img[alt="comming soon ...."] {
+  margin: 20px 25px;
+  width: 300px;
+  height: 200px;
+  float: left;
+}
+
+section:nth-child(even) {
+  background-color: #efbe7c;
+}
+
+footer {
+  clear: both;
+  background-color: #AB274F;
+  text-align: center;
+  font-size: 35px;
+  color: #ff9cb3;
+}
+
+footer span {
+  color: #ffcfda;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  display: inline-block;
+  padding: 14px 16px;
+}
+
+footer a {
+  color: #ffcfda;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+main {
+  width: 100%;
+}
+
+main aside {
+  background-color: #FAEBD7;
+  width: 25%;
+  float: right;
+  height: 650px;
+  overflow: hidden;
+}
+
+main aside h2 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+main aside ul {
+  list-style: none;
+  margin: 10px 16px;
+  padding: 10px 15px;
+}
+
+main aside a {
+  text-align: center;
+  padding: 10px 15px;
+  line-height: 2em;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+main aside a:hover {
+  color: #21ABCD;
+}
+
+main section.col {
+  width: 75%;
+  float: left;
+  height: 650px;
+}
+
+section#imageSlider {
+  margin: 0;
+  padding: 0;
+}
+
+section#imageSlider div.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+section#imageSlider div.slide p {
+  font-size: 20px;
+  color: #0f4f5f;
+}
+
+section#imageSlider .slide1 {
+  background-image: url("../img/1.jpeg");
+}
+
+section ul {
+  text-align: center;
+}
+
+section li {
+  font-size: 20px;
+  color: #1a86a1;
+}
+
+section li:hover {
+  color: #21ABCD;
+}
+
+section form {
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 14px 16px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section input, section textarea, section button {
+  color: #05181d;
+  padding: 14px 16px;
+  margin-bottom: 5px;
+}
+
+section input:focus, section textarea:focus, section button:focus {
+  border: 2px #21ABCD solid;
+}
+
+section button {
+  background-color: #21ABCD;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+}
+
+section label {
+  background: none;
+  text-align: left;
+  font-size: 15px;
+  color: #21ABCD;
+}
+/*# sourceMappingURL=style.css.map */
