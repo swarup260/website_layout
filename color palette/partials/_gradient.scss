@@ -1,0 +1,81 @@
+%g-dania{
+    background: -webkit-linear-gradient(to right, #be93c5, #7bc6cc);
+    background: linear-gradient(to right, #be93c5, #7bc6cc);
+}
+%g-silver{
+     background: -webkit-linear-gradient(to right, #bdc3c7, #2c3e50);
+     background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+%g-dusk{
+    background: -webkit-linear-gradient(to right, #19547b, #ffd89b);
+    background: linear-gradient(to right, #19547b, #ffd89b);
+}
+
+%g-green{
+     background: -webkit-linear-gradient(to right, #808080, #3fada8);
+     background: linear-gradient(to right, #808080, #3fada8);
+}
+
+%g-bloodred{
+    background: -webkit-linear-gradient(to right, #f85032, #e73827);
+    background: linear-gradient(to right, #f85032, #e73827);
+}
+
+%g-firewatch{
+    background: -webkit-linear-gradient(to right, #cb2d3e, #ef473a);
+    background: linear-gradient(to right, #cb2d3e, #ef473a);
+}
+
+%g-lush{
+    background: -webkit-linear-gradient(to right, #56ab2f, #a8e063);
+    background: linear-gradient(to right, #56ab2f, #a8e063);
+}
+
+%g-eXpresso{
+    background: -webkit-linear-gradient(to right, #ad5389, #3c1053);
+    background: linear-gradient(to right, #ad5389, #3c1053);
+}
+
+%g-lust{
+    background: -webkit-linear-gradient(to right, #333333, #dd1818);
+    background: linear-gradient(to right, #333333, #dd1818);
+}
+
+%g-lust {
+    background: -webkit-linear-gradient(to right, #89f7fe, #66a6ff);
+    background: linear-gradient(to right, #89f7fe, #66a6ff);
+}
+
+%g-Morpheus{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+%g-games{
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+}
+%g-random{
+    background-image: linear-gradient( 135deg, #FF7AF5 10%, #513162 100%);
+}
+
+%g-random1{
+    background-image: linear-gradient( 135deg, #F6CEEC 10%, #D939CD 100%);
+}
+
+%button{
+    .btn-grad {
+        background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%)
+    }
+
+    .btn-grad:hover {
+        background-position: right center;
+    }
+}
+%button2{
+    .btn-grad {
+        background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)
+    }
+
+    .btn-grad:hover {
+        background-position: right center;
+    }
+}

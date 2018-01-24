@@ -1,0 +1,81 @@
+/* NOUEBO Original */
+/* explore */
+/* Sunset */
+/* random */
+/* */
+/* Sapphire blue */
+/* material color 1 */
+/* material color 1 */
+#showcase {
+  background: -webkit-linear-gradient(to right, #cb2d3e, #ef473a);
+  background: linear-gradient(to right, #cb2d3e, #ef473a);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+header {
+  background: #FF5349;
+  overflow: hidden;
+  border: none;
+  border-bottom: 2px solid #4F80E1;
+}
+
+header div#title {
+  float: left;
+}
+
+header div#title h1 {
+  font-size: 40px;
+  margin: 14px 16px;
+  color: #F0F0F1;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  list-style: none;
+  position: relative;
+  top: 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  text-align: center;
+  text-decoration: none;
+  margin: 14px 16px;
+  color: #F0F0F1;
+  font-size: 20px;
+}
+
+header nav ul li a:hover {
+  color: #292C44;
+}
+
+#showcase {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#showcase h1 {
+  color: #F0F0F1;
+  font-size: 100px;
+  text-shadow: 2px 2px #ff0000;
+}
+
+footer {
+  background: #18CDCA;
+  height: 20vh;
+}
+/*# sourceMappingURL=color.css.map */
