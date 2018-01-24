@@ -33,6 +33,7 @@
 /* Parallax */
 
 [class*="para-"]{
+	/* Parallax Effect styling properties */
 	min-height: 500px;
 	background-size: cover;
 	background-position: center;
