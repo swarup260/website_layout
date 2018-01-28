@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab');
+.row{
+    display: grid;
+    grid-template-rows: repeat(10,800px);
+}
+
+.cols > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cols:nth-child(even){
+    border: 2px solid salmon;
+}
+.cols:nth-child(odd) {
+    border: 2px solid rebeccapurple;
+}
+
+div[class*="text"]{
+    width: 100%;
+    height: 100%;   
+}
+
+/* Examples  Vertical Split using data- attrs 
+limit - doesnot work in multiple lines.
+
+
+
+h1 {
+    font-size: 150px;
+    color: white;
+    white-space: nowrap;
+}
+
+h1::before {
+    content: attr(data-ex);
+    color: black;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+}
+*/
+div.text1{
+     background: linear-gradient(to right, white 0%,white 50%,black 50% , black 100%);
+}
+div.text1 h1{
+    color: #fff;
+    font-size: 150px;
+    white-space: nowrap; 
+}
+
+div.text1 h1::before{
+    content: attr(data-text);
+    overflow: hidden;
+    left: 247px;
+    width: 35%;
+    color: black;
+    position: absolute;
+}
+/* Examples   text shadow layers */
+div.text2{
+    background-color: antiquewhite;
+}
+div.text2 h1{
+    color: #fff;
+    font-size: 10em;
+    font-weight: bold;
+    font-family: Helvetica;
+    /* Multi-Layered Text Shadow  */
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0, 0, 0, .1),
+    0 0 5px rgba(0, 0, 0, .1),
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0, 0, 0, .15);
+}
+
+
+.text3{
+    background: #333;
+}
+
+/* Examples   ul elements */
+ul.fly-text{
+    list-style: none;
+}
+ul.fly-text li {
+    color: #fff;
+    display: inline-block;
+    font-family:Helvetica, sans-serif;
+    font-size: 100px;
+    margin-right:20px; 
+}
+ul.fly-text li:last-child{
+    margin-right: 0;
+}
+
+
+/* Examples  Vertical Split using  blend modes
+limitation - not work with all colors
+
+*/
+
+div.text4 {
+     background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
+}
+
+div.text4 h1{
+    font-size: 150px;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+/* Examples  Vertical Split using  background clip multiline
+limit : not all browser support
+
+*/
+
+div.text5 {
+    background: linear-gradient(90deg, black 0%, black 50%, white 50%,  white 100%);
+}
+
+div.text5 > h1{
+    background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
+    font-size: 150px;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Examples  Layered Fonts
+
+*/
+
+div.text6{
+    background: rgba(52, 91, 210, 0.85);
+}
+div.text6 > h1{
+     font-size: 150px;
+     font-weight: normal;
+     font-family: 'Roboto',sans-serif;
+}
+
+div.text6> h1::before{
+    content: attr(data-font);
+    position: absolute;
+    left: 258px;
+    color: #fff;
+    font-family: 'Roboto Condensed',sans-serif;
+} 
+
+
+/* Examples Clip path */
+
+div.text7{
+    background: rgba(14, 228, 228, 0.85);
+}
+
+div.text7 h1 {
+    font-size:150px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+div.text7 h1::before,
+div.text7 h1::after{
+    content: attr(data-text7);
+    overflow: hidden;
+    position: absolute;
+    left: 247px;
+    color: #aaa;
+}
+
+div.text7 h1::after{
+    color:#fa0b0b;
+    clip-path: polygon(70% 0, 100% 0,100% 100%, 70% 100%);
+}
+
+/* Examples  using clip*/
+
+div.text8 > h1 {
+    font-family: 'Lobster', cursive;
+    color: #000;
+    font-size: 150px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.7), 1px -1px 0 rgba(255, 255, 255, 0.7), -1px 1px 0 rgba(255, 255, 255, 0.7), 1px 1px 0 rgba(255, 255, 255, 0.7), -1px 2px 1px #a0a0a0, -2px 4px 2px #a0a0a0, -3px 6px 3px rgba(160, 160, 160, 0.6), -4px 8px 4px rgba(160, 160, 160, 0.5), -5px 10px 5px rgba(160, 160, 160, 0.4), -6px 12px 6px rgba(160, 160, 160, 0.3), -7px 13px 7px rgba(160, 160, 160, 0.2), -8px 15px 8px rgba(160, 160, 160, 0.2), -9px 17px 9px rgba(160, 160, 160, 0.2), -10px 19px 10px rgba(160, 160, 160, 0.2), -11px 20px 11px rgba(160, 160, 160, 0.1), -12px 22px 12px rgba(160, 160, 160, 0.1), -13px 24px 13px rgba(160, 160, 160, 0.1), -14px 26px 14px rgba(160, 160, 160, 0.1), -15px 28px 15px rgba(160, 160, 160, 0.1), -16px 30px 16px rgba(160, 160, 160, 0.1), -17px 32px 17px rgba(160, 160, 160, 0.1), -18px 34px 18px rgba(160, 160, 160, 0.1), -19px 36px 19px rgba(160, 160, 160, 0.1), -20px 38px 20px rgba(160, 160, 160, 0.1), -21px 39px 21px rgba(160, 160, 160, 0.1);
+}
+
+div.text8 img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: lighten;
+    -webkit-animation: moveit 10s infinite ease-in-out forwards;
+    animation: moveit 10s infinite ease-in-out forwards;
+    -webkit-filter: blur(2px);
+    pointer-events: none;
+}
+
+@-webkit-keyframes moveit {
+    0% {
+        -webkit-transform: translate(0%, 0%);
+        transform: translate(0%, 0%);
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+    }
+    15% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+    50% {
+        -webkit-transform: translate(3%, 3%);
+        transform: translate(3%, 3%);
+    }
+    100% {
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+    }
+}
+
+@keyframes moveit {
+    0% {
+        -webkit-transform: translate(0%, 0%);
+        transform: translate(0%, 0%);
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+    }
+    15% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+    50% {
+        -webkit-transform: translate(3%, 3%);
+        transform: translate(3%, 3%);
+    }
+    100% {
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+    }
+}
